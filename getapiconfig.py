@@ -3,9 +3,9 @@ import sys
 
 # Getting a api settings from apiconfig
 HOME = os.path.expanduser("~")
-PATH_apiconfig = HOME + "\\.config\\rescale\\apiconfig"
+PATH_APICONFIG = HOME + "\\.config\\rescale\\apiconfig"
 try:
-    f = open(PATH_apiconfig, 'r', encoding='UTF8')
+    f = open(PATH_APICONFIG, 'r', encoding='UTF8')
     lines = f.readlines()
     f.close()
 except FileNotFoundError as e:
