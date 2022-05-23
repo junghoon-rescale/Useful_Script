@@ -3,7 +3,7 @@ import zipfile
 
 CWD = os.getcwd()
 Folder_Inputs = CWD + '\\' + 'Input Files'
-# The folder name "Input Files" could be changed as your
+# The folder name "Input Files" should be changed as yours
 os.chdir(Folder_Inputs)
 
 
@@ -19,4 +19,3 @@ with zipfile.ZipFile("inputfiles.zip", "w") as zip_inputs:
     for file in List_inputfiles:
         zip_inputs.write(file)
     zip_inputs.close()
-
