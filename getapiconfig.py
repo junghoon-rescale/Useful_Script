@@ -1,10 +1,11 @@
-import os, sys
+import os
+import sys
 
 # Getting a api settings from apiconfig
-homepath = os.path.expanduser("~")
-setting_file = homepath + "\\.config\\rescale\\apiconfig"
+HOME = os.path.expanduser("~")
+PATH_apiconfig = HOME + "\\.config\\rescale\\apiconfig"
 try:
-    f = open(setting_file, 'r', encoding='UTF8')
+    f = open(PATH_apiconfig, 'r', encoding='UTF8')
     lines = f.readlines()
     f.close()
 except FileNotFoundError as e:
@@ -13,4 +14,4 @@ except FileNotFoundError as e:
 
 API_baseurl = lines[1].split('=')[1].rstrip('\n').lstrip().replace("'", "")
 API_key = lines[2].split('=')[1].rstrip('\n').lstrip().replace("'", "")
-API_token = 'Token ' + apikey
+API_token = 'Token ' + API_key
