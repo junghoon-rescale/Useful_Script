@@ -12,5 +12,3 @@ for (root, directories, files) in os.walk(pwd):
             file_path = os.path.join(root, file)
             #print(file, ',', str(root).replace(pwd,'.'))
             flist.write(file+','+str(root).replace(pwd,'.')+'\n')
-
-

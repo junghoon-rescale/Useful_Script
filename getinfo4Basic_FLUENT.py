@@ -13,3 +13,4 @@ for (root, directories, files) in os.walk(CWD):
             name_folder = str(root).replace(CWD, '.').split('\\')[1]
             Case.append(name_journal)
             Folder.append(name_folder)
+            
