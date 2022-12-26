@@ -6,3 +6,4 @@
 5. **getinfo4Basic_FLUENT.py**: Find a jou file & folder name for FLUENT
 6. **ziparchive_inputs.py**: Make the zip archive file from certain folder
 7. **ziparchive_folders.py**: This is not available for now
+8. **omega.py**: Calculate a radian/sec from RPM in argument
